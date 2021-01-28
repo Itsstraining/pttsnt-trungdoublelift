@@ -19,7 +19,7 @@ function timUCLN(x) {
     }
 
   }
-  return mangUCLN;
+  return output=mangUCLN.join(" ");
 }
 
 function main(input) {
