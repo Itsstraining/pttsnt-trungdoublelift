@@ -2,24 +2,23 @@
 function timUCLN(x) {
   let mangUCLN = [];
   let output = " ";
-  for (let i = 2; i < x;) {
-    if (x < 2) {
-      output = 0;
-    }
-    else {
-      if ( x % i == 0) {
-        mangUCLN.push(i);
-        x = x / 2;
-      }
-      else{
-        i++;
-        continue;
-      }
-
-    }
-
+  if (x == 0) {
+    return output = "0";
   }
-  return output=mangUCLN.join(" ");
+  else {
+    for (let i = 0; i <= x; i++) {
+      if (i >= 2 && x % i == 0) {
+        mangUCLN.push(i);
+        x = x / i;
+      }
+      else {
+        continue;
+
+      }
+
+    }
+    return output = mangUCLN.join(" ");
+  }
 }
 
 function main(input) {
